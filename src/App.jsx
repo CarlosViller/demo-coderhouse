@@ -5,7 +5,7 @@ function App() {
   const [posts, setPosts] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts")
+    fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((json) => {
         setPosts(json);
